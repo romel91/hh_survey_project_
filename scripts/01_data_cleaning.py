@@ -12,11 +12,7 @@
 import pandas as pd
 import numpy as np
 import os
-
-# ── Config ─────────────────────────────────────────────────
-RAW_PATH     = 'data/raw/HH_Survey_Dataset.xlsx'
-CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
-HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
+from config import RAW_PATH, CLEANED_PATH, HH_PATH, POVERTY_LINE
 
 os.makedirs('data/cleaned', exist_ok=True)
 
@@ -86,11 +82,13 @@ print("  STEP 4: DATA TYPE CORRECTIONS")
 print("=" * 55)
 
 df['survey_date'] = pd.to_datetime(df['survey_date'], errors='coerce')
+df['income_missing'] = df['monthly_income'].isnull().astype(int)
 df['monthly_income'] = pd.to_numeric(df['monthly_income'], errors='coerce').fillna(0)
 df['age'] = pd.to_numeric(df['age'], errors='coerce')
 df['hh_id'] = df['hh_id'].astype(int)
 
 print("survey_date      : converted to datetime")
+print("income_missing   : flagged before fill (income_missing=1 means originally NaN)")
 print("monthly_income   : converted to numeric (NaN → 0)")
 print("age              : confirmed numeric")
 print("hh_id            : confirmed integer")
@@ -198,7 +196,7 @@ hh = df.groupby('hh_id').agg(
     earner_count    = ('is_earner',         'sum'),
     avg_age         = ('age',               'mean'),
     avg_edu_score   = ('edu_score',         'mean'),
-    interview_duration = ('interview_duration', 'first'),
+    interview_duration = ('interview_duration', 'mean'),
 ).reset_index()
 
 # Per-capita income
@@ -210,8 +208,7 @@ hh['dependency_ratio'] = (
     hh['earner_count'].replace(0, np.nan)
 ).round(2)
 
-# Household poverty flag (per-capita < 5000 BDT/month)
-POVERTY_LINE = 5000
+# Household poverty flag
 hh['is_poor'] = (hh['income_per_capita'] < POVERTY_LINE).astype(int)
 
 # Merge household features back to individual-level

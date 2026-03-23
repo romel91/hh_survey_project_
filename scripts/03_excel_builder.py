@@ -19,11 +19,7 @@ from openpyxl.chart import BarChart, Reference
 import os
 import warnings
 warnings.filterwarnings('ignore')
-
-# ── Config ─────────────────────────────────────────────────
-CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
-HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
-OUTPUT_PATH  = 'outputs/HH_Survey_Analysis.xlsx'
+from config import CLEANED_PATH, HH_PATH, OUTPUT_PATH, POVERTY_LINE
 
 os.makedirs('outputs', exist_ok=True)
 
@@ -127,7 +123,7 @@ ws1.sheet_view.showGridLines = False
 ws1.freeze_panes = 'A3'
 
 write_title(ws1, 1,
-    'HOUSEHOLD SURVEY — CLEANED DATASET  |  137 Individuals · 30 Households · Bangladesh 2024',
+    f'HOUSEHOLD SURVEY — CLEANED DATASET  |  {len(df)} Individuals · {hh["hh_id"].nunique()} Households · Bangladesh 2024',
     18)
 
 headers = [
@@ -187,13 +183,14 @@ for i, (m, v, n) in enumerate(overview_rows, 5):
     write_kv(ws2, i, m, v, n, alt=(i % 2 == 0))
 
 # Block B — Income Stats
-write_section(ws2, 14, '💰  INCOME STATISTICS — Monthly BDT', 4, NAVY)
-write_header(ws2, 15, ['Statistic', 'All Members', 'Earners Only (n=89)', ''],
-             [30, 20, 32, 5], NAVY)
 earners = df[df['monthly_income'] > 0]['monthly_income']
 all_inc = df['monthly_income']
+n_earners = len(earners)
+write_section(ws2, 14, '💰  INCOME STATISTICS — Monthly BDT', 4, NAVY)
+write_header(ws2, 15, ['Statistic', 'All Members', f'Earners Only (n={n_earners})', ''],
+             [30, 20, 32, 5], NAVY)
 income_rows = [
-    ('Count',           f'{len(all_inc):,}',           f'{len(earners):,}'),
+    ('Count',           f'{len(all_inc):,}',           f'{n_earners:,}'),
     ('Mean',            f'৳{all_inc.mean():,.0f}',     f'৳{earners.mean():,.0f}'),
     ('Median',          f'৳{all_inc.median():,.0f}',   f'৳{earners.median():,.0f}'),
     ('Std Deviation',   f'৳{all_inc.std():,.0f}',      f'৳{earners.std():,.0f}'),
@@ -236,19 +233,22 @@ for i, edu in enumerate(edu_seq_all, 37):
 c_inc = df[df['treatment'] == 0]['monthly_income']
 t_inc = df[df['treatment'] == 1]['monthly_income']
 t_stat, p_val = stats.ttest_ind(c_inc, t_inc)
+n_control   = len(c_inc)
+n_treatment = len(t_inc)
 
 write_section(ws2, 43, '⚡  TREATMENT EFFECT — Independent Samples T-Test', 4, RED)
-write_header(ws2, 44, ['Metric', 'Control Group (n=68)', 'Treatment Group (n=69)', ''],
+write_header(ws2, 44, ['Metric', f'Control Group (n={n_control})', f'Treatment Group (n={n_treatment})', ''],
              [30, 20, 32, 5], RED)
+sig_label = 'No sig. difference detected' if p_val > 0.05 else 'Significant difference detected'
 trt_rows = [
     ('Mean Income (BDT)',    f'৳{c_inc.mean():,.0f}',   f'৳{t_inc.mean():,.0f}'),
     ('Median Income (BDT)',  f'৳{c_inc.median():,.0f}', f'৳{t_inc.median():,.0f}'),
     ('Std Deviation',        f'৳{c_inc.std():,.0f}',    f'৳{t_inc.std():,.0f}'),
     ('T-Statistic',          f'{t_stat:.3f}',            '← two-sample t-test'),
-    ('P-Value',              f'{p_val:.4f}',             '> 0.05 = NOT statistically significant'),
+    ('P-Value',              f'{p_val:.4f}',             f'{">" if p_val > 0.05 else "<"} 0.05 = {"NOT " if p_val > 0.05 else ""}statistically significant'),
     ('Income Difference',    f'৳{t_inc.mean()-c_inc.mean():,.0f}',
                              'Treatment earns more on average'),
-    ('Interpretation',       'No sig. difference detected',
+    ('Interpretation',       sig_label,
                              'Larger sample may reveal effect over time'),
 ]
 for i, (m, c, t) in enumerate(trt_rows, 45):
@@ -380,7 +380,7 @@ ws6 = wb.create_sheet('06 Household Level')
 ws6.sheet_view.showGridLines = False
 ws6.freeze_panes = 'A3'
 
-write_title(ws6, 1, 'HOUSEHOLD-LEVEL AGGREGATED DATA  |  30 Households', 10)
+write_title(ws6, 1, f'HOUSEHOLD-LEVEL AGGREGATED DATA  |  {len(hh)} Households', 10)
 headers6 = ['HH ID', 'District', 'Group', 'HH Size', 'Earners',
             'Total Income (BDT)', 'Per-Capita Income', 'Dependency Ratio',
             'Treatment', 'Poverty Status']

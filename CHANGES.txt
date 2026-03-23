@@ -1,0 +1,212 @@
+================================================================
+  HOUSEHOLD SURVEY PROJECT — CHANGE LOG
+  Documenting all improvements made to the original codebase
+  Date: 2026-03-23
+================================================================
+
+
+================================================================
+NEW FILES CREATED
+================================================================
+
+1. scripts/config.py
+   ─────────────────
+   Purpose : Single shared configuration file for all scripts.
+   Why     : All three scripts previously duplicated the same
+             file path strings and POVERTY_LINE value. A change
+             to any path or threshold required editing all three
+             files. Now changed in one place.
+   Contents:
+     - RAW_PATH     = 'data/raw/HH_Survey_Dataset.xlsx'
+     - CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
+     - HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
+     - CHARTS_DIR   = 'charts'
+     - OUTPUT_PATH  = 'outputs/HH_Survey_Analysis.xlsx'
+     - POVERTY_LINE = 5000  (BDT per capita per month)
+
+2. run_all.py
+   ──────────
+   Purpose : Single entry point to run the full pipeline.
+   Why     : Previously the three scripts had to be run manually
+             in the correct order. run_all.py runs them in
+             sequence (01 → 02 → 03), reports elapsed time per
+             script, and stops immediately with an error message
+             if any script fails.
+   Usage   : python3 run_all.py  (from project root)
+
+3. requirements.txt
+   ─────────────────
+   Purpose : Lists all Python package dependencies.
+   Why     : The project had a venv/ folder but no requirements
+             file, making the environment impossible to reproduce
+             without running the code and seeing what imports.
+   Contents: pandas, numpy, openpyxl, matplotlib, seaborn, scipy
+
+
+================================================================
+CHANGES TO scripts/01_data_cleaning.py
+================================================================
+
+1. Replaced local path constants with config import
+   BEFORE:
+     RAW_PATH     = 'data/raw/HH_Survey_Dataset.xlsx'
+     CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
+     HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
+   AFTER:
+     from config import RAW_PATH, CLEANED_PATH, HH_PATH, POVERTY_LINE
+
+2. Added income_missing flag before filling NaN income with 0
+   BEFORE:
+     df['monthly_income'] = pd.to_numeric(...).fillna(0)
+   AFTER:
+     df['income_missing'] = df['monthly_income'].isnull().astype(int)
+     df['monthly_income'] = pd.to_numeric(...).fillna(0)
+   Why: Filling NaN with 0 silently conflated "no income recorded"
+        with "earns zero". The income_missing=1 flag preserves
+        the distinction so analysts can filter on it separately
+        (e.g. exclude imputed zeros from earner-only analyses).
+
+3. Fixed interview_duration household aggregation
+   BEFORE:
+     interview_duration = ('interview_duration', 'first')
+   AFTER:
+     interview_duration = ('interview_duration', 'mean')
+   Why: 'first' just copied the Head row's interview duration to
+        the household record. Since interview_duration is measured
+        per individual, 'mean' gives a more meaningful
+        household-level summary.
+
+4. Removed local POVERTY_LINE = 5000 constant
+   BEFORE:
+     POVERTY_LINE = 5000
+     hh['is_poor'] = (hh['income_per_capita'] < POVERTY_LINE)...
+   AFTER:
+     hh['is_poor'] = (hh['income_per_capita'] < POVERTY_LINE)...
+     (POVERTY_LINE now imported from config.py)
+   Why: Eliminates the risk of updating the threshold in one script
+        but forgetting to update it in another.
+
+
+================================================================
+CHANGES TO scripts/02_eda_analysis.py
+================================================================
+
+1. Replaced local path/constant definitions with config import
+   BEFORE:
+     CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
+     HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
+     CHARTS_DIR   = 'charts'
+   AFTER:
+     from config import CLEANED_PATH, HH_PATH, CHARTS_DIR, POVERTY_LINE
+
+2. Made KPI dashboard values dynamic (Chart 1)
+   BEFORE: All 10 KPI tile values were hardcoded strings:
+     ('30',       'Households Surveyed', ...),
+     ('137',      'Total Individuals',   ...),
+     ('4.6',      'Avg Household Size',  ...),
+     ('৳13,022',  'Avg Monthly Income',  ...),
+     ('59.1%',    'Employment Rate',     ...),
+     ('51.1%',    'Treatment Group',     ...),
+     ('3',        'Households in Poverty',...),
+     ('৳11,089',  'Median Income (BDT)', ...),
+     ('5',        'Districts Covered',   ...),
+     ('59.5 min', 'Avg Interview Duration',...),
+   AFTER: All values computed from the loaded DataFrames:
+     n_hh, n_ind, n_dist, avg_hh_size, avg_income, med_income,
+     emp_rate, trt_pct, poor_hh, avg_dur are calculated first,
+     then used in the kpis list.
+   Why: Hardcoded KPI values would silently display wrong numbers
+        if the underlying data changed.
+
+3. Made subtitle text dynamic
+   BEFORE:
+     '30 Households · 137 Individuals · 5 Districts · ...'
+   AFTER:
+     f'{n_hh} Households · {n_ind} Individuals · {n_dist} Districts · ...'
+
+4. Made gender distribution chart title dynamic
+   BEFORE:
+     ax.set_title('Gender Distribution\n(137 individuals)')
+   AFTER:
+     ax.set_title(f'Gender Distribution\n({n_ind} individuals)')
+
+
+================================================================
+CHANGES TO scripts/03_excel_builder.py
+================================================================
+
+1. Replaced local path/constant definitions with config import
+   BEFORE:
+     CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
+     HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
+     OUTPUT_PATH  = 'outputs/HH_Survey_Analysis.xlsx'
+   AFTER:
+     from config import CLEANED_PATH, HH_PATH, OUTPUT_PATH, POVERTY_LINE
+
+2. Sheet 1 title — individual and household counts now dynamic
+   BEFORE:
+     '...| 137 Individuals · 30 Households · Bangladesh 2024'
+   AFTER:
+     f'...| {len(df)} Individuals · {hh["hh_id"].nunique()} Households · Bangladesh 2024'
+
+3. Sheet 2 Block B — earner count header now dynamic
+   BEFORE:
+     write_header(..., ['Statistic', 'All Members', 'Earners Only (n=89)', ''], ...)
+   AFTER:
+     n_earners = len(df[df['monthly_income'] > 0])
+     write_header(..., ['Statistic', 'All Members', f'Earners Only (n={n_earners})', ''], ...)
+   Also fixed: earners/all_inc variables are now computed BEFORE
+   the write_header call that references n_earners (original order
+   caused a NameError at runtime).
+
+4. Sheet 2 Block E — treatment group counts in header now dynamic
+   BEFORE:
+     ['Metric', 'Control Group (n=68)', 'Treatment Group (n=69)', '']
+   AFTER:
+     n_control   = len(df[df['treatment'] == 0])
+     n_treatment = len(df[df['treatment'] == 1])
+     [f'Control Group (n={n_control})', f'Treatment Group (n={n_treatment})']
+
+5. Sheet 2 Block E — significance label now computed from p-value
+   BEFORE:
+     ('Interpretation', 'No sig. difference detected', ...)
+     ('P-Value', f'{p_val:.4f}', '> 0.05 = NOT statistically significant')
+   AFTER:
+     sig_label = 'No sig. difference detected' if p_val > 0.05 else 'Significant difference detected'
+     P-value note also adapts its > / < symbol based on actual result.
+
+6. Sheet 6 title — household count now dynamic
+   BEFORE:
+     'HOUSEHOLD-LEVEL AGGREGATED DATA  |  30 Households'
+   AFTER:
+     f'HOUSEHOLD-LEVEL AGGREGATED DATA  |  {len(hh)} Households'
+
+
+================================================================
+SUMMARY OF ALL OUTPUT FILES PRODUCED
+================================================================
+
+  data/cleaned/HH_Survey_Cleaned.csv      — 137 rows, 28 columns
+  data/cleaned/HH_Household_Level.csv     — 30 rows, 16 columns
+
+  charts/01_kpi_dashboard.png
+  charts/02_income_distribution.png
+  charts/03_district_analysis.png
+  charts/04_education_analysis.png
+  charts/05_demographics.png
+  charts/06_occupation_analysis.png
+  charts/07_treatment_analysis.png
+  charts/08_household_analysis.png
+  charts/09_correlation.png
+  charts/10_quality_poverty.png
+
+  outputs/HH_Survey_Analysis.xlsx         — 7 sheets:
+    01 Cleaned Data
+    02 Summary Statistics
+    03 District Pivot
+    04 Education Pivot
+    05 Occupation Pivot
+    06 Household Level
+    07 Key Insights
+
+================================================================

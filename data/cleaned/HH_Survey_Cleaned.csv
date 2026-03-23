@@ -1,138 +1,138 @@
-hh_id,person_id,hh_head_name,relation,age,sex,edu_level,marital_status,occupation,monthly_income,treatment,district,enumerator_id,survey_date,interview_duration,income_outlier_flag,sex_label,group,is_earner,edu_score,age_group,survey_month,individual_poor,hh_size,income_per_capita,dependency_ratio,is_poor
-101,P001,Ali Khan,Head,42,1,Unknown,Married,Service,16270,0,Dhaka,EN02,2024-03-04,36.0,0,Male,Control,1,0,31–45,3.0,0,5,14339.8,0.25,0
-101,P002,Ali Khan,Mother,21,1,Post-Graduate,Married,Day Laborer,17403,0,Dhaka,EN02,2024-03-04,36.0,0,Male,Control,1,5,18–30,3.0,0,5,14339.8,0.25,0
-101,P003,Ali Khan,Spouse,40,2,Post-Graduate,Widowed,Service,23918,0,Dhaka,EN02,2024-03-04,36.0,0,Female,Control,1,5,31–45,3.0,0,5,14339.8,0.25,0
-101,P004,Ali Khan,Son,50,1,Unknown,Widowed,Student,0,0,Dhaka,EN02,2024-03-04,36.0,0,Male,Control,0,0,46+,3.0,1,5,14339.8,0.25,0
-101,P005,Ali Khan,Sister,23,1,Primary,Single,NGO Worker,14108,0,Dhaka,EN02,2024-03-04,36.0,0,Male,Control,1,1,18–30,3.0,0,5,14339.8,0.25,0
-102,P006,Begum Khan,Head,62,1,Post-Graduate,Married,Day Laborer,24960,1,Dhaka,EN03,2024-03-07,59.0,0,Male,Treatment,1,5,46+,3.0,0,6,10537.17,0.5,0
-102,P007,Begum Khan,Brother,15,1,Primary,Married,NGO Worker,13845,1,Dhaka,EN03,2024-03-07,59.0,0,Male,Treatment,1,1,Under 18,3.0,0,6,10537.17,0.5,0
-102,P008,Begum Khan,Brother,49,1,Post-Graduate,Married,Farmer,12505,1,Dhaka,EN03,2024-03-07,59.0,0,Male,Treatment,1,5,46+,3.0,0,6,10537.17,0.5,0
-102,P009,Begum Khan,Sister,7,2,HSC,Married,Day Laborer,11913,1,Dhaka,EN03,2024-03-07,59.0,0,Female,Treatment,1,3,Under 18,3.0,0,6,10537.17,0.5,0
-102,P010,Begum Khan,Mother,50,2,Primary,Widowed,Unemployed,0,1,Dhaka,EN03,2024-03-07,59.0,0,Female,Treatment,0,1,46+,3.0,1,6,10537.17,0.5,0
-102,P011,Begum Khan,Father,46,2,Primary,Married,Housewife,0,1,Dhaka,EN03,2024-03-07,59.0,0,Female,Treatment,0,1,46+,3.0,1,6,10537.17,0.5,0
-103,P012,Ritu Haque,Head,55,1,HSC,Married,Service,12186,0,Sylhet,EN03,2024-06-19,79.0,0,Male,Control,1,3,46+,6.0,0,4,16759.0,0.0,0
-103,P013,Ritu Haque,Son,37,2,Unknown,Single,Day Laborer,10008,0,Sylhet,EN03,2024-06-19,79.0,0,Female,Control,1,0,31–45,6.0,0,4,16759.0,0.0,0
-103,P014,Ritu Haque,Brother,15,2,Graduate,Single,NGO Worker,17504,0,Sylhet,EN03,2024-06-19,79.0,0,Female,Control,1,4,Under 18,6.0,0,4,16759.0,0.0,0
-103,P015,Ritu Haque,Mother,34,2,Graduate,Single,Day Laborer,27338,0,Sylhet,EN03,2024-06-19,79.0,0,Female,Control,1,4,31–45,6.0,0,4,16759.0,0.0,0
-104,P016,Begum Mia,Head,18,1,Post-Graduate,Married,Business,21403,1,Chittagong,EN03,2024-04-06,83.0,0,Male,Treatment,1,5,Under 18,4.0,0,5,11775.0,0.67,0
-104,P017,Begum Mia,Sister,16,1,Post-Graduate,Married,Student,0,1,Chittagong,EN03,2024-04-06,83.0,0,Male,Treatment,0,5,Under 18,4.0,1,5,11775.0,0.67,0
-104,P018,Begum Mia,Son,28,1,Graduate,Widowed,Farmer,24626,1,Chittagong,EN03,2024-04-06,83.0,0,Male,Treatment,1,4,18–30,4.0,0,5,11775.0,0.67,0
-104,P019,Begum Mia,Daughter,36,1,Unknown,Married,Business,12846,1,Chittagong,EN03,2024-04-06,83.0,0,Male,Treatment,1,0,31–45,4.0,0,5,11775.0,0.67,0
-104,P020,Begum Mia,Spouse,20,1,Unknown,Widowed,Unemployed,0,1,Chittagong,EN03,2024-04-06,83.0,0,Male,Treatment,0,0,18–30,4.0,1,5,11775.0,0.67,0
-105,P021,Ritu Khan,Head,34,1,Graduate,Married,NGO Worker,11940,0,Chittagong,EN02,2024-06-16,,0,Male,Control,1,4,31–45,6.0,0,3,17357.33,0.0,0
-105,P022,Ritu Khan,Mother,53,1,Post-Graduate,Married,NGO Worker,27009,0,Chittagong,EN02,2024-06-16,,0,Male,Control,1,5,46+,6.0,0,3,17357.33,0.0,0
-105,P023,Ritu Khan,Brother,28,2,Graduate,Married,Day Laborer,13123,0,Chittagong,EN02,2024-06-16,,0,Female,Control,1,4,18–30,6.0,0,3,17357.33,0.0,0
-106,P024,Karim Ahmed,Head,55,1,Primary,Married,Farmer,7326,1,Chittagong,EN01,2024-05-18,54.0,0,Male,Treatment,1,1,46+,5.0,0,4,5788.25,1.0,0
-106,P025,Karim Ahmed,Brother,45,1,Primary,Single,Farmer,15827,1,Chittagong,EN01,2024-05-18,54.0,0,Male,Treatment,1,1,31–45,5.0,0,4,5788.25,1.0,0
-106,P026,Karim Ahmed,Spouse,37,1,Secondary,Widowed,Unemployed,0,1,Chittagong,EN01,2024-05-18,54.0,0,Male,Treatment,0,2,31–45,5.0,1,4,5788.25,1.0,0
-106,P027,Karim Ahmed,Son,39,1,Post-Graduate,Widowed,Unemployed,0,1,Chittagong,EN01,2024-05-18,54.0,0,Male,Treatment,0,5,31–45,5.0,1,4,5788.25,1.0,0
-107,P028,Nasrin Islam,Head,40,1,HSC,Married,NGO Worker,20303,0,Dhaka,EN02,2024-01-04,80.0,0,Male,Control,1,3,31–45,1.0,0,4,6822.25,1.0,0
-107,P029,Nasrin Islam,Sister,51,1,Post-Graduate,Widowed,Day Laborer,6986,0,Dhaka,EN02,2024-01-04,80.0,0,Male,Control,1,5,46+,1.0,0,4,6822.25,1.0,0
-107,P030,Nasrin Islam,Father,51,2,Unknown,Single,Student,0,0,Dhaka,EN02,2024-01-04,80.0,0,Female,Control,0,0,46+,1.0,1,4,6822.25,1.0,0
-107,P031,Nasrin Islam,Son,39,2,Primary,Married,Housewife,0,0,Dhaka,EN02,2024-01-04,80.0,0,Female,Control,0,1,31–45,1.0,1,4,6822.25,1.0,0
-108,P032,Nasrin Khan,Head,21,1,Post-Graduate,Married,Farmer,8056,1,Khulna,EN01,2024-04-26,37.0,0,Male,Treatment,1,5,18–30,4.0,0,5,8527.0,0.67,0
-108,P033,Nasrin Khan,Sister,59,1,Primary,Married,Unemployed,0,1,Khulna,EN01,2024-04-26,37.0,0,Male,Treatment,0,1,46+,4.0,1,5,8527.0,0.67,0
-108,P034,Nasrin Khan,Father,18,2,Unknown,Single,NGO Worker,5070,1,Khulna,EN01,2024-04-26,37.0,0,Female,Treatment,1,0,Under 18,4.0,0,5,8527.0,0.67,0
-108,P035,Nasrin Khan,Father,21,2,Secondary,Married,Unemployed,0,1,Khulna,EN01,2024-04-26,37.0,0,Female,Treatment,0,2,18–30,4.0,1,5,8527.0,0.67,0
-108,P036,Nasrin Khan,Son,17,2,Primary,Single,Farmer,29509,1,Khulna,EN01,2024-04-26,37.0,0,Female,Treatment,1,1,Under 18,4.0,0,5,8527.0,0.67,0
-109,P037,Rahim Mia,Head,21,1,Graduate,Married,Day Laborer,11089,0,Dhaka,EN05,2024-04-17,45.0,0,Male,Control,1,4,18–30,4.0,0,5,15872.0,0.0,0
-109,P038,Rahim Mia,Spouse,43,1,Post-Graduate,Single,NGO Worker,8928,0,Dhaka,EN05,2024-04-17,45.0,0,Male,Control,1,5,31–45,4.0,0,5,15872.0,0.0,0
-109,P039,Rahim Mia,Mother,20,1,Graduate,Single,NGO Worker,26540,0,Dhaka,EN05,2024-04-17,45.0,0,Male,Control,1,4,18–30,4.0,0,5,15872.0,0.0,0
-109,P040,Rahim Mia,Mother,41,2,Secondary,Single,Service,12821,0,Dhaka,EN05,2024-04-17,45.0,0,Female,Control,1,2,31–45,4.0,0,5,15872.0,0.0,0
-109,P041,Rahim Mia,Daughter,30,1,Post-Graduate,Widowed,Business,19982,0,Dhaka,EN05,2024-04-17,45.0,0,Male,Control,1,5,18–30,4.0,0,5,15872.0,0.0,0
-110,P042,Karim Mia,Head,22,1,Graduate,Married,Student,0,1,Khulna,EN04,2024-05-19,37.0,0,Male,Treatment,0,4,18–30,5.0,1,5,10356.0,1.5,0
-110,P043,Karim Mia,Mother,21,1,Secondary,Single,Student,0,1,Khulna,EN04,2024-05-19,37.0,0,Male,Treatment,0,2,18–30,5.0,1,5,10356.0,1.5,0
-110,P044,Karim Mia,Daughter,23,1,HSC,Widowed,Business,25043,1,Khulna,EN04,2024-05-19,37.0,0,Male,Treatment,1,3,18–30,5.0,0,5,10356.0,1.5,0
-110,P045,Karim Mia,Sister,46,1,Post-Graduate,Widowed,Business,26737,1,Khulna,EN04,2024-05-19,37.0,0,Male,Treatment,1,5,46+,5.0,0,5,10356.0,1.5,0
-110,P046,Karim Mia,Spouse,13,2,Unknown,Single,Housewife,0,1,Khulna,EN04,2024-05-19,37.0,0,Female,Treatment,0,0,Under 18,5.0,1,5,10356.0,1.5,0
-111,P047,Ali Haque,Head,61,1,Post-Graduate,Married,Business,21561,0,Rajshahi,EN02,2024-06-11,51.0,0,Male,Control,1,5,46+,6.0,0,5,10677.2,0.25,0
-111,P048,Ali Haque,Father,21,1,Unknown,Widowed,NGO Worker,14066,0,Rajshahi,EN02,2024-06-11,51.0,0,Male,Control,1,0,18–30,6.0,0,5,10677.2,0.25,0
-111,P049,Ali Haque,Spouse,5,2,Primary,Widowed,Business,10294,0,Rajshahi,EN02,2024-06-11,51.0,0,Female,Control,1,1,Under 18,6.0,0,5,10677.2,0.25,0
-111,P050,Ali Haque,Brother,33,2,Graduate,Single,Day Laborer,7465,0,Rajshahi,EN02,2024-06-11,51.0,0,Female,Control,1,4,31–45,6.0,0,5,10677.2,0.25,0
-111,P051,Ali Haque,Brother,14,1,Secondary,Widowed,Housewife,0,0,Rajshahi,EN02,2024-06-11,51.0,0,Male,Control,0,2,Under 18,6.0,1,5,10677.2,0.25,0
-112,P052,Salam Mia,Head,40,1,Primary,Married,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,Male,Treatment,0,1,31–45,3.0,1,6,1812.83,5.0,1
-112,P053,Salam Mia,Brother,11,2,Graduate,Married,Housewife,0,1,Dhaka,EN03,2024-03-26,180.0,0,Female,Treatment,0,4,Under 18,3.0,1,6,1812.83,5.0,1
-112,P054,Salam Mia,Son,60,1,Primary,Married,Farmer,10877,1,Dhaka,EN03,2024-03-26,180.0,0,Male,Treatment,1,1,46+,3.0,0,6,1812.83,5.0,1
-112,P055,Salam Mia,Brother,26,2,Post-Graduate,Widowed,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,Female,Treatment,0,5,18–30,3.0,1,6,1812.83,5.0,1
-112,P056,Salam Mia,Daughter,15,1,HSC,Single,Unemployed,0,1,Dhaka,EN03,2024-03-26,180.0,0,Male,Treatment,0,3,Under 18,3.0,1,6,1812.83,5.0,1
-112,P057,Salam Mia,Son,17,2,Secondary,Married,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,Female,Treatment,0,2,Under 18,3.0,1,6,1812.83,5.0,1
-113,P058,Rahim Khan,Head,35,1,Secondary,Married,NGO Worker,27266,0,Dhaka,EN04,2024-03-09,33.0,0,Male,Control,1,2,31–45,3.0,0,4,18016.5,0.0,0
-113,P059,Rahim Khan,Sister,39,2,Unknown,Single,Business,10851,0,Dhaka,EN04,2024-03-09,33.0,0,Female,Control,1,0,31–45,3.0,0,4,18016.5,0.0,0
-113,P060,Rahim Khan,Mother,21,1,Unknown,Widowed,NGO Worker,16327,0,Dhaka,EN04,2024-03-09,33.0,0,Male,Control,1,0,18–30,3.0,0,4,18016.5,0.0,0
-113,P061,Rahim Khan,Brother,55,2,HSC,Widowed,Day Laborer,17622,0,Dhaka,EN04,2024-03-09,33.0,0,Female,Control,1,3,46+,3.0,0,4,18016.5,0.0,0
-114,P062,Ali Mia,Head,41,1,HSC,Married,Day Laborer,26765,1,Dhaka,EN04,2024-01-17,50.0,0,Male,Treatment,1,3,31–45,1.0,0,4,17887.0,0.33,0
-114,P063,Ali Mia,Daughter,44,2,Post-Graduate,Single,Business,21617,1,Dhaka,EN04,2024-01-17,50.0,0,Female,Treatment,1,5,31–45,1.0,0,4,17887.0,0.33,0
-114,P064,Ali Mia,Daughter,47,2,Secondary,Married,Business,23166,1,Dhaka,EN04,2024-01-17,50.0,0,Female,Treatment,1,2,46+,1.0,0,4,17887.0,0.33,0
-114,P065,Ali Mia,Son,17,2,Post-Graduate,Married,Housewife,0,1,Dhaka,EN04,2024-01-17,50.0,0,Female,Treatment,0,5,Under 18,1.0,1,4,17887.0,0.33,0
-115,P066,Fatema Haque,Head,45,1,Graduate,Married,Service,20236,0,Chittagong,EN01,2024-03-10,51.0,0,Male,Control,1,4,31–45,3.0,0,5,5659.2,1.5,0
-115,P067,Fatema Haque,Father,33,1,Graduate,Married,Housewife,0,0,Chittagong,EN01,2024-03-10,51.0,0,Male,Control,0,4,31–45,3.0,1,5,5659.2,1.5,0
-115,P068,Fatema Haque,Brother,10,2,Graduate,Widowed,Service,8060,0,Chittagong,EN01,2024-03-10,51.0,0,Female,Control,1,4,Under 18,3.0,0,5,5659.2,1.5,0
-115,P069,Fatema Haque,Sister,53,1,Post-Graduate,Married,Student,0,0,Chittagong,EN01,2024-03-10,51.0,0,Male,Control,0,5,46+,3.0,1,5,5659.2,1.5,0
-115,P070,Fatema Haque,Sister,17,1,Unknown,Single,Student,0,0,Chittagong,EN01,2024-03-10,51.0,0,Male,Control,0,0,Under 18,3.0,1,5,5659.2,1.5,0
-116,P071,Mina Mia,Head,63,1,Post-Graduate,Married,NGO Worker,21199,1,Chittagong,EN04,2024-04-21,49.0,0,Male,Treatment,1,5,46+,4.0,0,6,13425.67,1.0,0
-116,P072,Mina Mia,Father,20,1,Post-Graduate,Widowed,Farmer,29607,1,Chittagong,EN04,2024-04-21,49.0,0,Male,Treatment,1,5,18–30,4.0,0,6,13425.67,1.0,0
-116,P073,Mina Mia,Sister,54,1,HSC,Single,Housewife,0,1,Chittagong,EN04,2024-04-21,49.0,0,Male,Treatment,0,3,46+,4.0,1,6,13425.67,1.0,0
-116,P074,Mina Mia,Sister,49,2,Unknown,Widowed,Student,0,1,Chittagong,EN04,2024-04-21,49.0,0,Female,Treatment,0,0,46+,4.0,1,6,13425.67,1.0,0
-116,P075,Mina Mia,Sister,12,2,Primary,Married,Service,29748,1,Chittagong,EN04,2024-04-21,49.0,0,Female,Treatment,1,1,Under 18,4.0,0,6,13425.67,1.0,0
-116,P076,Mina Mia,Father,44,2,Graduate,Married,Housewife,0,1,Chittagong,EN04,2024-04-21,49.0,0,Female,Treatment,0,4,31–45,4.0,1,6,13425.67,1.0,0
-117,P077,Nasrin Ahmed,Head,58,1,Primary,Married,Business,19413,0,Khulna,EN02,2024-06-09,87.0,0,Male,Control,1,1,46+,6.0,0,6,16038.67,0.2,0
-117,P078,Nasrin Ahmed,Spouse,50,2,Primary,Married,Service,15476,0,Khulna,EN02,2024-06-09,87.0,0,Female,Control,1,1,46+,6.0,0,6,16038.67,0.2,0
-117,P079,Nasrin Ahmed,Mother,10,1,Primary,Single,NGO Worker,27739,0,Khulna,EN02,2024-06-09,87.0,0,Male,Control,1,1,Under 18,6.0,0,6,16038.67,0.2,0
-117,P080,Nasrin Ahmed,Son,50,1,Unknown,Married,NGO Worker,15842,0,Khulna,EN02,2024-06-09,87.0,0,Male,Control,1,0,46+,6.0,0,6,16038.67,0.2,0
-117,P081,Nasrin Ahmed,Mother,34,2,Unknown,Single,NGO Worker,17762,0,Khulna,EN02,2024-06-09,87.0,0,Female,Control,1,0,31–45,6.0,0,6,16038.67,0.2,0
-117,P082,Nasrin Ahmed,Sister,42,1,Graduate,Married,Unemployed,0,0,Khulna,EN02,2024-06-09,87.0,0,Male,Control,0,4,31–45,6.0,1,6,16038.67,0.2,0
-118,P083,Begum Ahmed,Head,49,1,Primary,Married,Business,19281,1,Khulna,EN04,,53.0,0,Male,Treatment,1,1,46+,,0,3,21973.67,0.0,0
-118,P084,Begum Ahmed,Father,6,2,Secondary,Widowed,NGO Worker,28729,1,Khulna,EN04,,53.0,0,Female,Treatment,1,2,Under 18,,0,3,21973.67,0.0,0
-118,P085,Begum Ahmed,Son,58,2,Primary,Widowed,Farmer,17911,1,Khulna,EN04,,53.0,0,Female,Treatment,1,1,46+,,0,3,21973.67,0.0,0
-119,P086,Karim Islam,Head,34,1,HSC,Married,Service,11935,0,Dhaka,EN02,2024-04-06,31.0,0,Male,Control,1,3,31–45,4.0,0,3,13889.33,0.0,0
-119,P087,Karim Islam,Father,25,2,HSC,Married,NGO Worker,13266,0,Dhaka,EN02,2024-04-06,31.0,0,Female,Control,1,3,18–30,4.0,0,3,13889.33,0.0,0
-119,P088,Karim Islam,Sister,10,2,Unknown,Widowed,Farmer,16467,0,Dhaka,EN02,2024-04-06,31.0,0,Female,Control,1,0,Under 18,4.0,0,3,13889.33,0.0,0
-120,P089,Karim Mia,Head,57,1,Primary,Married,Student,250000,1,Khulna,EN01,2024-02-07,27.0,1,Male,Treatment,1,1,46+,2.0,0,4,69590.75,0.33,0
-120,P090,Karim Mia,Son,35,1,Graduate,Single,Unemployed,0,1,Khulna,EN01,2024-02-07,27.0,0,Male,Treatment,0,4,31–45,2.0,1,4,69590.75,0.33,0
-120,P091,Karim Mia,Brother,21,2,Primary,Widowed,Day Laborer,10366,1,Khulna,EN01,2024-02-07,27.0,0,Female,Treatment,1,1,18–30,2.0,0,4,69590.75,0.33,0
-120,P092,Karim Mia,Daughter,11,1,Secondary,Widowed,NGO Worker,17997,1,Khulna,EN01,2024-02-07,27.0,0,Male,Treatment,1,2,Under 18,2.0,0,4,69590.75,0.33,0
-121,P093,Karim Haque,Head,61,1,Graduate,Married,Day Laborer,23544,0,Chittagong,EN02,2024-01-23,63.0,0,Male,Control,1,4,46+,1.0,0,4,7700.75,1.0,0
-121,P094,Karim Haque,Sister,7,2,Graduate,Married,Service,7259,0,Chittagong,EN02,2024-01-23,63.0,0,Female,Control,1,4,Under 18,1.0,0,4,7700.75,1.0,0
-121,P095,Karim Haque,Mother,46,2,Unknown,Married,Unemployed,0,0,Chittagong,EN02,2024-01-23,63.0,0,Female,Control,0,0,46+,1.0,1,4,7700.75,1.0,0
-121,P096,Karim Haque,Spouse,32,2,Post-Graduate,Married,Housewife,0,0,Chittagong,EN02,2024-01-23,63.0,0,Female,Control,0,5,31–45,1.0,1,4,7700.75,1.0,0
-122,P097,Salam Haque,Head,47,1,HSC,Married,Business,15561,1,Khulna,EN03,2024-05-26,86.0,0,Male,Treatment,1,3,46+,5.0,0,6,4837.67,2.0,1
-122,P098,Salam Haque,Sister,20,1,Secondary,Married,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,Male,Treatment,0,2,18–30,5.0,1,6,4837.67,2.0,1
-122,P099,Salam Haque,Sister,34,2,Secondary,Single,Unemployed,0,1,Khulna,EN03,2024-05-26,86.0,0,Female,Treatment,0,2,31–45,5.0,1,6,4837.67,2.0,1
-122,P100,Salam Haque,Sister,25,1,HSC,Single,Service,13465,1,Khulna,EN03,2024-05-26,86.0,0,Male,Treatment,1,3,18–30,5.0,0,6,4837.67,2.0,1
-122,P101,Salam Haque,Daughter,22,2,Graduate,Single,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,Female,Treatment,0,4,18–30,5.0,1,6,4837.67,2.0,1
-122,P102,Salam Haque,Spouse,20,2,HSC,Widowed,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,Female,Treatment,0,3,18–30,5.0,1,6,4837.67,2.0,1
-123,P103,Nasrin Islam,Head,43,1,Post-Graduate,Married,Student,0,0,Rajshahi,EN01,2024-01-10,53.0,0,Male,Control,0,5,31–45,1.0,1,6,5232.67,2.0,0
-123,P104,Nasrin Islam,Daughter,47,2,HSC,Widowed,Service,18942,0,Rajshahi,EN01,2024-01-10,53.0,0,Female,Control,1,3,46+,1.0,0,6,5232.67,2.0,0
-123,P105,Nasrin Islam,Brother,40,2,Secondary,Widowed,Unemployed,0,0,Rajshahi,EN01,2024-01-10,53.0,0,Female,Control,0,2,31–45,1.0,1,6,5232.67,2.0,0
-123,P106,Nasrin Islam,Daughter,24,2,Primary,Single,Student,0,0,Rajshahi,EN01,2024-01-10,53.0,0,Female,Control,0,1,18–30,1.0,1,6,5232.67,2.0,0
-123,P107,Nasrin Islam,Daughter,12,1,Primary,Single,Unemployed,0,0,Rajshahi,EN01,2024-01-10,53.0,0,Male,Control,0,1,Under 18,1.0,1,6,5232.67,2.0,0
-123,P108,Nasrin Islam,Daughter,51,2,Unknown,Single,Business,12454,0,Rajshahi,EN01,2024-01-10,53.0,0,Female,Control,1,0,46+,1.0,0,6,5232.67,2.0,0
-124,P109,Salam Ahmed,Head,35,1,Unknown,Married,Farmer,23132,1,Chittagong,EN01,2024-06-18,41.0,0,Male,Treatment,1,0,31–45,6.0,0,5,13695.6,0.0,0
-124,P110,Salam Ahmed,Daughter,49,1,Post-Graduate,Married,Day Laborer,5401,1,Chittagong,EN01,2024-06-18,41.0,0,Male,Treatment,1,5,46+,6.0,0,5,13695.6,0.0,0
-124,P111,Salam Ahmed,Mother,23,2,HSC,Married,Service,11041,1,Chittagong,EN01,2024-06-18,41.0,0,Female,Treatment,1,3,18–30,6.0,0,5,13695.6,0.0,0
-124,P112,Salam Ahmed,Spouse,21,2,Unknown,Single,NGO Worker,21113,1,Chittagong,EN01,2024-06-18,41.0,0,Female,Treatment,1,0,18–30,6.0,0,5,13695.6,0.0,0
-124,P113,Salam Ahmed,Spouse,41,1,Primary,Single,Business,7791,1,Chittagong,EN01,2024-06-18,41.0,0,Male,Treatment,1,1,31–45,6.0,0,5,13695.6,0.0,0
-125,P114,Karim Haque,Head,51,1,HSC,Married,Unemployed,0,0,Rajshahi,EN04,2024-05-20,53.0,0,Male,Control,0,3,46+,5.0,1,4,15436.25,0.33,0
-125,P115,Karim Haque,Father,24,2,Secondary,Widowed,Farmer,24976,0,Rajshahi,EN04,2024-05-20,53.0,0,Female,Control,1,2,18–30,5.0,0,4,15436.25,0.33,0
-125,P116,Karim Haque,Brother,11,1,Post-Graduate,Single,Business,26640,0,Rajshahi,EN04,2024-05-20,53.0,0,Male,Control,1,5,Under 18,5.0,0,4,15436.25,0.33,0
-125,P117,Karim Haque,Spouse,15,1,Primary,Widowed,Day Laborer,10129,0,Rajshahi,EN04,2024-05-20,53.0,0,Male,Control,1,1,Under 18,5.0,0,4,15436.25,0.33,0
-126,P118,Fatema Islam,Head,32,1,Secondary,Married,Business,28035,1,Khulna,EN05,2024-04-10,29.0,0,Male,Treatment,1,2,31–45,4.0,0,3,17838.67,0.5,0
-126,P119,Fatema Islam,Sister,34,1,Post-Graduate,Single,Business,25481,1,Khulna,EN05,2024-04-10,29.0,0,Male,Treatment,1,5,31–45,4.0,0,3,17838.67,0.5,0
-126,P120,Fatema Islam,Mother,47,1,HSC,Single,Student,0,1,Khulna,EN05,2024-04-10,29.0,0,Male,Treatment,0,3,46+,4.0,1,3,17838.67,0.5,0
-127,P121,Ali Khan,Head,56,1,Post-Graduate,Married,Business,19390,0,Sylhet,EN01,2024-01-06,64.0,0,Male,Control,1,5,46+,1.0,0,4,14986.25,0.33,0
-127,P122,Ali Khan,Spouse,34,2,Post-Graduate,Married,Business,21399,0,Sylhet,EN01,2024-01-06,64.0,0,Female,Control,1,5,31–45,1.0,0,4,14986.25,0.33,0
-127,P123,Ali Khan,Mother,36,2,Unknown,Widowed,Farmer,19156,0,Sylhet,EN01,2024-01-06,64.0,0,Female,Control,1,0,31–45,1.0,0,4,14986.25,0.33,0
-127,P124,Ali Khan,Brother,25,2,Unknown,Single,Student,0,0,Sylhet,EN01,2024-01-06,64.0,0,Female,Control,0,0,18–30,1.0,1,4,14986.25,0.33,0
-128,P125,Ali Haque,Head,35,1,Primary,Married,NGO Worker,25800,1,Dhaka,EN01,2024-02-16,81.0,0,Male,Treatment,1,1,31–45,2.0,0,3,23150.33,0.0,0
-128,P126,Ali Haque,Sister,36,1,HSC,Married,NGO Worker,15921,1,Dhaka,EN01,2024-02-16,81.0,0,Male,Treatment,1,3,31–45,2.0,0,3,23150.33,0.0,0
-128,P127,Ali Haque,Daughter,47,1,Primary,Married,NGO Worker,27730,1,Dhaka,EN01,2024-02-16,81.0,0,Male,Treatment,1,1,46+,2.0,0,3,23150.33,0.0,0
-129,P128,Ali Islam,Head,38,1,Secondary,Married,Service,8798,0,Chittagong,EN05,2024-01-15,36.0,0,Male,Control,1,2,31–45,1.0,0,6,2808.67,2.0,1
-129,P129,Ali Islam,Sister,30,1,Post-Graduate,Widowed,Unemployed,0,0,Chittagong,EN05,2024-01-15,36.0,0,Male,Control,0,5,18–30,1.0,1,6,2808.67,2.0,1
-129,P130,Ali Islam,Father,8,1,Graduate,Married,Unemployed,0,0,Chittagong,EN05,2024-01-15,36.0,0,Male,Control,0,4,Under 18,1.0,1,6,2808.67,2.0,1
-129,P131,Ali Islam,Brother,33,1,Primary,Married,Housewife,0,0,Chittagong,EN05,2024-01-15,36.0,0,Male,Control,0,1,31–45,1.0,1,6,2808.67,2.0,1
-129,P132,Ali Islam,Daughter,33,2,Unknown,Single,Student,0,0,Chittagong,EN05,2024-01-15,36.0,0,Female,Control,0,0,31–45,1.0,1,6,2808.67,2.0,1
-129,P133,Ali Islam,Brother,15,2,Graduate,Single,NGO Worker,8054,0,Chittagong,EN05,2024-01-15,36.0,0,Female,Control,1,4,Under 18,1.0,0,6,2808.67,2.0,1
-130,P134,Karim Islam,Head,49,1,Post-Graduate,Married,Business,21674,1,Rajshahi,EN01,2024-06-27,44.0,0,Male,Treatment,1,5,46+,6.0,0,4,6689.5,1.0,0
-130,P135,Karim Islam,Brother,22,2,HSC,Married,Student,0,1,Rajshahi,EN01,2024-06-27,44.0,0,Female,Treatment,0,3,18–30,6.0,1,4,6689.5,1.0,0
-130,P136,Karim Islam,Father,40,1,HSC,Single,Housewife,0,1,Rajshahi,EN01,2024-06-27,44.0,0,Male,Treatment,0,3,31–45,6.0,1,4,6689.5,1.0,0
-130,P137,Karim Islam,Sister,9,2,HSC,Married,Business,5084,1,Rajshahi,EN01,2024-06-27,44.0,0,Female,Treatment,1,3,Under 18,6.0,0,4,6689.5,1.0,0
+hh_id,person_id,hh_head_name,relation,age,sex,edu_level,marital_status,occupation,monthly_income,treatment,district,enumerator_id,survey_date,interview_duration,income_missing,income_outlier_flag,sex_label,group,is_earner,edu_score,age_group,survey_month,individual_poor,hh_size,income_per_capita,dependency_ratio,is_poor
+101,P001,Ali Khan,Head,42,1,Unknown,Married,Service,16270,0,Dhaka,EN02,2024-03-04,36.0,0,0,Male,Control,1,0,31–45,3.0,0,5,14339.8,0.25,0
+101,P002,Ali Khan,Mother,21,1,Post-Graduate,Married,Day Laborer,17403,0,Dhaka,EN02,2024-03-04,36.0,0,0,Male,Control,1,5,18–30,3.0,0,5,14339.8,0.25,0
+101,P003,Ali Khan,Spouse,40,2,Post-Graduate,Widowed,Service,23918,0,Dhaka,EN02,2024-03-04,36.0,0,0,Female,Control,1,5,31–45,3.0,0,5,14339.8,0.25,0
+101,P004,Ali Khan,Son,50,1,Unknown,Widowed,Student,0,0,Dhaka,EN02,2024-03-04,36.0,0,0,Male,Control,0,0,46+,3.0,1,5,14339.8,0.25,0
+101,P005,Ali Khan,Sister,23,1,Primary,Single,NGO Worker,14108,0,Dhaka,EN02,2024-03-04,36.0,0,0,Male,Control,1,1,18–30,3.0,0,5,14339.8,0.25,0
+102,P006,Begum Khan,Head,62,1,Post-Graduate,Married,Day Laborer,24960,1,Dhaka,EN03,2024-03-07,59.0,0,0,Male,Treatment,1,5,46+,3.0,0,6,10537.17,0.5,0
+102,P007,Begum Khan,Brother,15,1,Primary,Married,NGO Worker,13845,1,Dhaka,EN03,2024-03-07,59.0,0,0,Male,Treatment,1,1,Under 18,3.0,0,6,10537.17,0.5,0
+102,P008,Begum Khan,Brother,49,1,Post-Graduate,Married,Farmer,12505,1,Dhaka,EN03,2024-03-07,59.0,0,0,Male,Treatment,1,5,46+,3.0,0,6,10537.17,0.5,0
+102,P009,Begum Khan,Sister,7,2,HSC,Married,Day Laborer,11913,1,Dhaka,EN03,2024-03-07,59.0,0,0,Female,Treatment,1,3,Under 18,3.0,0,6,10537.17,0.5,0
+102,P010,Begum Khan,Mother,50,2,Primary,Widowed,Unemployed,0,1,Dhaka,EN03,2024-03-07,59.0,0,0,Female,Treatment,0,1,46+,3.0,1,6,10537.17,0.5,0
+102,P011,Begum Khan,Father,46,2,Primary,Married,Housewife,0,1,Dhaka,EN03,2024-03-07,59.0,0,0,Female,Treatment,0,1,46+,3.0,1,6,10537.17,0.5,0
+103,P012,Ritu Haque,Head,55,1,HSC,Married,Service,12186,0,Sylhet,EN03,2024-06-19,79.0,0,0,Male,Control,1,3,46+,6.0,0,4,16759.0,0.0,0
+103,P013,Ritu Haque,Son,37,2,Unknown,Single,Day Laborer,10008,0,Sylhet,EN03,2024-06-19,79.0,0,0,Female,Control,1,0,31–45,6.0,0,4,16759.0,0.0,0
+103,P014,Ritu Haque,Brother,15,2,Graduate,Single,NGO Worker,17504,0,Sylhet,EN03,2024-06-19,79.0,0,0,Female,Control,1,4,Under 18,6.0,0,4,16759.0,0.0,0
+103,P015,Ritu Haque,Mother,34,2,Graduate,Single,Day Laborer,27338,0,Sylhet,EN03,2024-06-19,79.0,0,0,Female,Control,1,4,31–45,6.0,0,4,16759.0,0.0,0
+104,P016,Begum Mia,Head,18,1,Post-Graduate,Married,Business,21403,1,Chittagong,EN03,2024-04-06,83.0,0,0,Male,Treatment,1,5,Under 18,4.0,0,5,11775.0,0.67,0
+104,P017,Begum Mia,Sister,16,1,Post-Graduate,Married,Student,0,1,Chittagong,EN03,2024-04-06,83.0,0,0,Male,Treatment,0,5,Under 18,4.0,1,5,11775.0,0.67,0
+104,P018,Begum Mia,Son,28,1,Graduate,Widowed,Farmer,24626,1,Chittagong,EN03,2024-04-06,83.0,0,0,Male,Treatment,1,4,18–30,4.0,0,5,11775.0,0.67,0
+104,P019,Begum Mia,Daughter,36,1,Unknown,Married,Business,12846,1,Chittagong,EN03,2024-04-06,83.0,0,0,Male,Treatment,1,0,31–45,4.0,0,5,11775.0,0.67,0
+104,P020,Begum Mia,Spouse,20,1,Unknown,Widowed,Unemployed,0,1,Chittagong,EN03,2024-04-06,83.0,0,0,Male,Treatment,0,0,18–30,4.0,1,5,11775.0,0.67,0
+105,P021,Ritu Khan,Head,34,1,Graduate,Married,NGO Worker,11940,0,Chittagong,EN02,2024-06-16,,0,0,Male,Control,1,4,31–45,6.0,0,3,17357.33,0.0,0
+105,P022,Ritu Khan,Mother,53,1,Post-Graduate,Married,NGO Worker,27009,0,Chittagong,EN02,2024-06-16,,0,0,Male,Control,1,5,46+,6.0,0,3,17357.33,0.0,0
+105,P023,Ritu Khan,Brother,28,2,Graduate,Married,Day Laborer,13123,0,Chittagong,EN02,2024-06-16,,0,0,Female,Control,1,4,18–30,6.0,0,3,17357.33,0.0,0
+106,P024,Karim Ahmed,Head,55,1,Primary,Married,Farmer,7326,1,Chittagong,EN01,2024-05-18,54.0,0,0,Male,Treatment,1,1,46+,5.0,0,4,5788.25,1.0,0
+106,P025,Karim Ahmed,Brother,45,1,Primary,Single,Farmer,15827,1,Chittagong,EN01,2024-05-18,54.0,0,0,Male,Treatment,1,1,31–45,5.0,0,4,5788.25,1.0,0
+106,P026,Karim Ahmed,Spouse,37,1,Secondary,Widowed,Unemployed,0,1,Chittagong,EN01,2024-05-18,54.0,0,0,Male,Treatment,0,2,31–45,5.0,1,4,5788.25,1.0,0
+106,P027,Karim Ahmed,Son,39,1,Post-Graduate,Widowed,Unemployed,0,1,Chittagong,EN01,2024-05-18,54.0,0,0,Male,Treatment,0,5,31–45,5.0,1,4,5788.25,1.0,0
+107,P028,Nasrin Islam,Head,40,1,HSC,Married,NGO Worker,20303,0,Dhaka,EN02,2024-01-04,80.0,0,0,Male,Control,1,3,31–45,1.0,0,4,6822.25,1.0,0
+107,P029,Nasrin Islam,Sister,51,1,Post-Graduate,Widowed,Day Laborer,6986,0,Dhaka,EN02,2024-01-04,80.0,0,0,Male,Control,1,5,46+,1.0,0,4,6822.25,1.0,0
+107,P030,Nasrin Islam,Father,51,2,Unknown,Single,Student,0,0,Dhaka,EN02,2024-01-04,80.0,0,0,Female,Control,0,0,46+,1.0,1,4,6822.25,1.0,0
+107,P031,Nasrin Islam,Son,39,2,Primary,Married,Housewife,0,0,Dhaka,EN02,2024-01-04,80.0,0,0,Female,Control,0,1,31–45,1.0,1,4,6822.25,1.0,0
+108,P032,Nasrin Khan,Head,21,1,Post-Graduate,Married,Farmer,8056,1,Khulna,EN01,2024-04-26,37.0,0,0,Male,Treatment,1,5,18–30,4.0,0,5,8527.0,0.67,0
+108,P033,Nasrin Khan,Sister,59,1,Primary,Married,Unemployed,0,1,Khulna,EN01,2024-04-26,37.0,0,0,Male,Treatment,0,1,46+,4.0,1,5,8527.0,0.67,0
+108,P034,Nasrin Khan,Father,18,2,Unknown,Single,NGO Worker,5070,1,Khulna,EN01,2024-04-26,37.0,0,0,Female,Treatment,1,0,Under 18,4.0,0,5,8527.0,0.67,0
+108,P035,Nasrin Khan,Father,21,2,Secondary,Married,Unemployed,0,1,Khulna,EN01,2024-04-26,37.0,0,0,Female,Treatment,0,2,18–30,4.0,1,5,8527.0,0.67,0
+108,P036,Nasrin Khan,Son,17,2,Primary,Single,Farmer,29509,1,Khulna,EN01,2024-04-26,37.0,0,0,Female,Treatment,1,1,Under 18,4.0,0,5,8527.0,0.67,0
+109,P037,Rahim Mia,Head,21,1,Graduate,Married,Day Laborer,11089,0,Dhaka,EN05,2024-04-17,45.0,0,0,Male,Control,1,4,18–30,4.0,0,5,15872.0,0.0,0
+109,P038,Rahim Mia,Spouse,43,1,Post-Graduate,Single,NGO Worker,8928,0,Dhaka,EN05,2024-04-17,45.0,0,0,Male,Control,1,5,31–45,4.0,0,5,15872.0,0.0,0
+109,P039,Rahim Mia,Mother,20,1,Graduate,Single,NGO Worker,26540,0,Dhaka,EN05,2024-04-17,45.0,0,0,Male,Control,1,4,18–30,4.0,0,5,15872.0,0.0,0
+109,P040,Rahim Mia,Mother,41,2,Secondary,Single,Service,12821,0,Dhaka,EN05,2024-04-17,45.0,0,0,Female,Control,1,2,31–45,4.0,0,5,15872.0,0.0,0
+109,P041,Rahim Mia,Daughter,30,1,Post-Graduate,Widowed,Business,19982,0,Dhaka,EN05,2024-04-17,45.0,0,0,Male,Control,1,5,18–30,4.0,0,5,15872.0,0.0,0
+110,P042,Karim Mia,Head,22,1,Graduate,Married,Student,0,1,Khulna,EN04,2024-05-19,37.0,0,0,Male,Treatment,0,4,18–30,5.0,1,5,10356.0,1.5,0
+110,P043,Karim Mia,Mother,21,1,Secondary,Single,Student,0,1,Khulna,EN04,2024-05-19,37.0,0,0,Male,Treatment,0,2,18–30,5.0,1,5,10356.0,1.5,0
+110,P044,Karim Mia,Daughter,23,1,HSC,Widowed,Business,25043,1,Khulna,EN04,2024-05-19,37.0,0,0,Male,Treatment,1,3,18–30,5.0,0,5,10356.0,1.5,0
+110,P045,Karim Mia,Sister,46,1,Post-Graduate,Widowed,Business,26737,1,Khulna,EN04,2024-05-19,37.0,0,0,Male,Treatment,1,5,46+,5.0,0,5,10356.0,1.5,0
+110,P046,Karim Mia,Spouse,13,2,Unknown,Single,Housewife,0,1,Khulna,EN04,2024-05-19,37.0,0,0,Female,Treatment,0,0,Under 18,5.0,1,5,10356.0,1.5,0
+111,P047,Ali Haque,Head,61,1,Post-Graduate,Married,Business,21561,0,Rajshahi,EN02,2024-06-11,51.0,0,0,Male,Control,1,5,46+,6.0,0,5,10677.2,0.25,0
+111,P048,Ali Haque,Father,21,1,Unknown,Widowed,NGO Worker,14066,0,Rajshahi,EN02,2024-06-11,51.0,0,0,Male,Control,1,0,18–30,6.0,0,5,10677.2,0.25,0
+111,P049,Ali Haque,Spouse,5,2,Primary,Widowed,Business,10294,0,Rajshahi,EN02,2024-06-11,51.0,0,0,Female,Control,1,1,Under 18,6.0,0,5,10677.2,0.25,0
+111,P050,Ali Haque,Brother,33,2,Graduate,Single,Day Laborer,7465,0,Rajshahi,EN02,2024-06-11,51.0,0,0,Female,Control,1,4,31–45,6.0,0,5,10677.2,0.25,0
+111,P051,Ali Haque,Brother,14,1,Secondary,Widowed,Housewife,0,0,Rajshahi,EN02,2024-06-11,51.0,0,0,Male,Control,0,2,Under 18,6.0,1,5,10677.2,0.25,0
+112,P052,Salam Mia,Head,40,1,Primary,Married,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,0,Male,Treatment,0,1,31–45,3.0,1,6,1812.83,5.0,1
+112,P053,Salam Mia,Brother,11,2,Graduate,Married,Housewife,0,1,Dhaka,EN03,2024-03-26,180.0,0,0,Female,Treatment,0,4,Under 18,3.0,1,6,1812.83,5.0,1
+112,P054,Salam Mia,Son,60,1,Primary,Married,Farmer,10877,1,Dhaka,EN03,2024-03-26,180.0,0,0,Male,Treatment,1,1,46+,3.0,0,6,1812.83,5.0,1
+112,P055,Salam Mia,Brother,26,2,Post-Graduate,Widowed,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,0,Female,Treatment,0,5,18–30,3.0,1,6,1812.83,5.0,1
+112,P056,Salam Mia,Daughter,15,1,HSC,Single,Unemployed,0,1,Dhaka,EN03,2024-03-26,180.0,0,0,Male,Treatment,0,3,Under 18,3.0,1,6,1812.83,5.0,1
+112,P057,Salam Mia,Son,17,2,Secondary,Married,Student,0,1,Dhaka,EN03,2024-03-26,180.0,0,0,Female,Treatment,0,2,Under 18,3.0,1,6,1812.83,5.0,1
+113,P058,Rahim Khan,Head,35,1,Secondary,Married,NGO Worker,27266,0,Dhaka,EN04,2024-03-09,33.0,0,0,Male,Control,1,2,31–45,3.0,0,4,18016.5,0.0,0
+113,P059,Rahim Khan,Sister,39,2,Unknown,Single,Business,10851,0,Dhaka,EN04,2024-03-09,33.0,0,0,Female,Control,1,0,31–45,3.0,0,4,18016.5,0.0,0
+113,P060,Rahim Khan,Mother,21,1,Unknown,Widowed,NGO Worker,16327,0,Dhaka,EN04,2024-03-09,33.0,0,0,Male,Control,1,0,18–30,3.0,0,4,18016.5,0.0,0
+113,P061,Rahim Khan,Brother,55,2,HSC,Widowed,Day Laborer,17622,0,Dhaka,EN04,2024-03-09,33.0,0,0,Female,Control,1,3,46+,3.0,0,4,18016.5,0.0,0
+114,P062,Ali Mia,Head,41,1,HSC,Married,Day Laborer,26765,1,Dhaka,EN04,2024-01-17,50.0,0,0,Male,Treatment,1,3,31–45,1.0,0,4,17887.0,0.33,0
+114,P063,Ali Mia,Daughter,44,2,Post-Graduate,Single,Business,21617,1,Dhaka,EN04,2024-01-17,50.0,0,0,Female,Treatment,1,5,31–45,1.0,0,4,17887.0,0.33,0
+114,P064,Ali Mia,Daughter,47,2,Secondary,Married,Business,23166,1,Dhaka,EN04,2024-01-17,50.0,0,0,Female,Treatment,1,2,46+,1.0,0,4,17887.0,0.33,0
+114,P065,Ali Mia,Son,17,2,Post-Graduate,Married,Housewife,0,1,Dhaka,EN04,2024-01-17,50.0,0,0,Female,Treatment,0,5,Under 18,1.0,1,4,17887.0,0.33,0
+115,P066,Fatema Haque,Head,45,1,Graduate,Married,Service,20236,0,Chittagong,EN01,2024-03-10,51.0,0,0,Male,Control,1,4,31–45,3.0,0,5,5659.2,1.5,0
+115,P067,Fatema Haque,Father,33,1,Graduate,Married,Housewife,0,0,Chittagong,EN01,2024-03-10,51.0,0,0,Male,Control,0,4,31–45,3.0,1,5,5659.2,1.5,0
+115,P068,Fatema Haque,Brother,10,2,Graduate,Widowed,Service,8060,0,Chittagong,EN01,2024-03-10,51.0,0,0,Female,Control,1,4,Under 18,3.0,0,5,5659.2,1.5,0
+115,P069,Fatema Haque,Sister,53,1,Post-Graduate,Married,Student,0,0,Chittagong,EN01,2024-03-10,51.0,0,0,Male,Control,0,5,46+,3.0,1,5,5659.2,1.5,0
+115,P070,Fatema Haque,Sister,17,1,Unknown,Single,Student,0,0,Chittagong,EN01,2024-03-10,51.0,0,0,Male,Control,0,0,Under 18,3.0,1,5,5659.2,1.5,0
+116,P071,Mina Mia,Head,63,1,Post-Graduate,Married,NGO Worker,21199,1,Chittagong,EN04,2024-04-21,49.0,0,0,Male,Treatment,1,5,46+,4.0,0,6,13425.67,1.0,0
+116,P072,Mina Mia,Father,20,1,Post-Graduate,Widowed,Farmer,29607,1,Chittagong,EN04,2024-04-21,49.0,0,0,Male,Treatment,1,5,18–30,4.0,0,6,13425.67,1.0,0
+116,P073,Mina Mia,Sister,54,1,HSC,Single,Housewife,0,1,Chittagong,EN04,2024-04-21,49.0,0,0,Male,Treatment,0,3,46+,4.0,1,6,13425.67,1.0,0
+116,P074,Mina Mia,Sister,49,2,Unknown,Widowed,Student,0,1,Chittagong,EN04,2024-04-21,49.0,0,0,Female,Treatment,0,0,46+,4.0,1,6,13425.67,1.0,0
+116,P075,Mina Mia,Sister,12,2,Primary,Married,Service,29748,1,Chittagong,EN04,2024-04-21,49.0,0,0,Female,Treatment,1,1,Under 18,4.0,0,6,13425.67,1.0,0
+116,P076,Mina Mia,Father,44,2,Graduate,Married,Housewife,0,1,Chittagong,EN04,2024-04-21,49.0,0,0,Female,Treatment,0,4,31–45,4.0,1,6,13425.67,1.0,0
+117,P077,Nasrin Ahmed,Head,58,1,Primary,Married,Business,19413,0,Khulna,EN02,2024-06-09,87.0,0,0,Male,Control,1,1,46+,6.0,0,6,16038.67,0.2,0
+117,P078,Nasrin Ahmed,Spouse,50,2,Primary,Married,Service,15476,0,Khulna,EN02,2024-06-09,87.0,0,0,Female,Control,1,1,46+,6.0,0,6,16038.67,0.2,0
+117,P079,Nasrin Ahmed,Mother,10,1,Primary,Single,NGO Worker,27739,0,Khulna,EN02,2024-06-09,87.0,0,0,Male,Control,1,1,Under 18,6.0,0,6,16038.67,0.2,0
+117,P080,Nasrin Ahmed,Son,50,1,Unknown,Married,NGO Worker,15842,0,Khulna,EN02,2024-06-09,87.0,0,0,Male,Control,1,0,46+,6.0,0,6,16038.67,0.2,0
+117,P081,Nasrin Ahmed,Mother,34,2,Unknown,Single,NGO Worker,17762,0,Khulna,EN02,2024-06-09,87.0,0,0,Female,Control,1,0,31–45,6.0,0,6,16038.67,0.2,0
+117,P082,Nasrin Ahmed,Sister,42,1,Graduate,Married,Unemployed,0,0,Khulna,EN02,2024-06-09,87.0,0,0,Male,Control,0,4,31–45,6.0,1,6,16038.67,0.2,0
+118,P083,Begum Ahmed,Head,49,1,Primary,Married,Business,19281,1,Khulna,EN04,,53.0,0,0,Male,Treatment,1,1,46+,,0,3,21973.67,0.0,0
+118,P084,Begum Ahmed,Father,6,2,Secondary,Widowed,NGO Worker,28729,1,Khulna,EN04,,53.0,0,0,Female,Treatment,1,2,Under 18,,0,3,21973.67,0.0,0
+118,P085,Begum Ahmed,Son,58,2,Primary,Widowed,Farmer,17911,1,Khulna,EN04,,53.0,0,0,Female,Treatment,1,1,46+,,0,3,21973.67,0.0,0
+119,P086,Karim Islam,Head,34,1,HSC,Married,Service,11935,0,Dhaka,EN02,2024-04-06,31.0,0,0,Male,Control,1,3,31–45,4.0,0,3,13889.33,0.0,0
+119,P087,Karim Islam,Father,25,2,HSC,Married,NGO Worker,13266,0,Dhaka,EN02,2024-04-06,31.0,0,0,Female,Control,1,3,18–30,4.0,0,3,13889.33,0.0,0
+119,P088,Karim Islam,Sister,10,2,Unknown,Widowed,Farmer,16467,0,Dhaka,EN02,2024-04-06,31.0,0,0,Female,Control,1,0,Under 18,4.0,0,3,13889.33,0.0,0
+120,P089,Karim Mia,Head,57,1,Primary,Married,Student,250000,1,Khulna,EN01,2024-02-07,27.0,0,1,Male,Treatment,1,1,46+,2.0,0,4,69590.75,0.33,0
+120,P090,Karim Mia,Son,35,1,Graduate,Single,Unemployed,0,1,Khulna,EN01,2024-02-07,27.0,0,0,Male,Treatment,0,4,31–45,2.0,1,4,69590.75,0.33,0
+120,P091,Karim Mia,Brother,21,2,Primary,Widowed,Day Laborer,10366,1,Khulna,EN01,2024-02-07,27.0,0,0,Female,Treatment,1,1,18–30,2.0,0,4,69590.75,0.33,0
+120,P092,Karim Mia,Daughter,11,1,Secondary,Widowed,NGO Worker,17997,1,Khulna,EN01,2024-02-07,27.0,0,0,Male,Treatment,1,2,Under 18,2.0,0,4,69590.75,0.33,0
+121,P093,Karim Haque,Head,61,1,Graduate,Married,Day Laborer,23544,0,Chittagong,EN02,2024-01-23,63.0,0,0,Male,Control,1,4,46+,1.0,0,4,7700.75,1.0,0
+121,P094,Karim Haque,Sister,7,2,Graduate,Married,Service,7259,0,Chittagong,EN02,2024-01-23,63.0,0,0,Female,Control,1,4,Under 18,1.0,0,4,7700.75,1.0,0
+121,P095,Karim Haque,Mother,46,2,Unknown,Married,Unemployed,0,0,Chittagong,EN02,2024-01-23,63.0,0,0,Female,Control,0,0,46+,1.0,1,4,7700.75,1.0,0
+121,P096,Karim Haque,Spouse,32,2,Post-Graduate,Married,Housewife,0,0,Chittagong,EN02,2024-01-23,63.0,0,0,Female,Control,0,5,31–45,1.0,1,4,7700.75,1.0,0
+122,P097,Salam Haque,Head,47,1,HSC,Married,Business,15561,1,Khulna,EN03,2024-05-26,86.0,0,0,Male,Treatment,1,3,46+,5.0,0,6,4837.67,2.0,1
+122,P098,Salam Haque,Sister,20,1,Secondary,Married,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,0,Male,Treatment,0,2,18–30,5.0,1,6,4837.67,2.0,1
+122,P099,Salam Haque,Sister,34,2,Secondary,Single,Unemployed,0,1,Khulna,EN03,2024-05-26,86.0,0,0,Female,Treatment,0,2,31–45,5.0,1,6,4837.67,2.0,1
+122,P100,Salam Haque,Sister,25,1,HSC,Single,Service,13465,1,Khulna,EN03,2024-05-26,86.0,0,0,Male,Treatment,1,3,18–30,5.0,0,6,4837.67,2.0,1
+122,P101,Salam Haque,Daughter,22,2,Graduate,Single,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,0,Female,Treatment,0,4,18–30,5.0,1,6,4837.67,2.0,1
+122,P102,Salam Haque,Spouse,20,2,HSC,Widowed,Student,0,1,Khulna,EN03,2024-05-26,86.0,0,0,Female,Treatment,0,3,18–30,5.0,1,6,4837.67,2.0,1
+123,P103,Nasrin Islam,Head,43,1,Post-Graduate,Married,Student,0,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Male,Control,0,5,31–45,1.0,1,6,5232.67,2.0,0
+123,P104,Nasrin Islam,Daughter,47,2,HSC,Widowed,Service,18942,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Female,Control,1,3,46+,1.0,0,6,5232.67,2.0,0
+123,P105,Nasrin Islam,Brother,40,2,Secondary,Widowed,Unemployed,0,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Female,Control,0,2,31–45,1.0,1,6,5232.67,2.0,0
+123,P106,Nasrin Islam,Daughter,24,2,Primary,Single,Student,0,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Female,Control,0,1,18–30,1.0,1,6,5232.67,2.0,0
+123,P107,Nasrin Islam,Daughter,12,1,Primary,Single,Unemployed,0,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Male,Control,0,1,Under 18,1.0,1,6,5232.67,2.0,0
+123,P108,Nasrin Islam,Daughter,51,2,Unknown,Single,Business,12454,0,Rajshahi,EN01,2024-01-10,53.0,0,0,Female,Control,1,0,46+,1.0,0,6,5232.67,2.0,0
+124,P109,Salam Ahmed,Head,35,1,Unknown,Married,Farmer,23132,1,Chittagong,EN01,2024-06-18,41.0,0,0,Male,Treatment,1,0,31–45,6.0,0,5,13695.6,0.0,0
+124,P110,Salam Ahmed,Daughter,49,1,Post-Graduate,Married,Day Laborer,5401,1,Chittagong,EN01,2024-06-18,41.0,0,0,Male,Treatment,1,5,46+,6.0,0,5,13695.6,0.0,0
+124,P111,Salam Ahmed,Mother,23,2,HSC,Married,Service,11041,1,Chittagong,EN01,2024-06-18,41.0,0,0,Female,Treatment,1,3,18–30,6.0,0,5,13695.6,0.0,0
+124,P112,Salam Ahmed,Spouse,21,2,Unknown,Single,NGO Worker,21113,1,Chittagong,EN01,2024-06-18,41.0,0,0,Female,Treatment,1,0,18–30,6.0,0,5,13695.6,0.0,0
+124,P113,Salam Ahmed,Spouse,41,1,Primary,Single,Business,7791,1,Chittagong,EN01,2024-06-18,41.0,0,0,Male,Treatment,1,1,31–45,6.0,0,5,13695.6,0.0,0
+125,P114,Karim Haque,Head,51,1,HSC,Married,Unemployed,0,0,Rajshahi,EN04,2024-05-20,53.0,0,0,Male,Control,0,3,46+,5.0,1,4,15436.25,0.33,0
+125,P115,Karim Haque,Father,24,2,Secondary,Widowed,Farmer,24976,0,Rajshahi,EN04,2024-05-20,53.0,0,0,Female,Control,1,2,18–30,5.0,0,4,15436.25,0.33,0
+125,P116,Karim Haque,Brother,11,1,Post-Graduate,Single,Business,26640,0,Rajshahi,EN04,2024-05-20,53.0,0,0,Male,Control,1,5,Under 18,5.0,0,4,15436.25,0.33,0
+125,P117,Karim Haque,Spouse,15,1,Primary,Widowed,Day Laborer,10129,0,Rajshahi,EN04,2024-05-20,53.0,0,0,Male,Control,1,1,Under 18,5.0,0,4,15436.25,0.33,0
+126,P118,Fatema Islam,Head,32,1,Secondary,Married,Business,28035,1,Khulna,EN05,2024-04-10,29.0,0,0,Male,Treatment,1,2,31–45,4.0,0,3,17838.67,0.5,0
+126,P119,Fatema Islam,Sister,34,1,Post-Graduate,Single,Business,25481,1,Khulna,EN05,2024-04-10,29.0,0,0,Male,Treatment,1,5,31–45,4.0,0,3,17838.67,0.5,0
+126,P120,Fatema Islam,Mother,47,1,HSC,Single,Student,0,1,Khulna,EN05,2024-04-10,29.0,0,0,Male,Treatment,0,3,46+,4.0,1,3,17838.67,0.5,0
+127,P121,Ali Khan,Head,56,1,Post-Graduate,Married,Business,19390,0,Sylhet,EN01,2024-01-06,64.0,0,0,Male,Control,1,5,46+,1.0,0,4,14986.25,0.33,0
+127,P122,Ali Khan,Spouse,34,2,Post-Graduate,Married,Business,21399,0,Sylhet,EN01,2024-01-06,64.0,0,0,Female,Control,1,5,31–45,1.0,0,4,14986.25,0.33,0
+127,P123,Ali Khan,Mother,36,2,Unknown,Widowed,Farmer,19156,0,Sylhet,EN01,2024-01-06,64.0,0,0,Female,Control,1,0,31–45,1.0,0,4,14986.25,0.33,0
+127,P124,Ali Khan,Brother,25,2,Unknown,Single,Student,0,0,Sylhet,EN01,2024-01-06,64.0,0,0,Female,Control,0,0,18–30,1.0,1,4,14986.25,0.33,0
+128,P125,Ali Haque,Head,35,1,Primary,Married,NGO Worker,25800,1,Dhaka,EN01,2024-02-16,81.0,0,0,Male,Treatment,1,1,31–45,2.0,0,3,23150.33,0.0,0
+128,P126,Ali Haque,Sister,36,1,HSC,Married,NGO Worker,15921,1,Dhaka,EN01,2024-02-16,81.0,0,0,Male,Treatment,1,3,31–45,2.0,0,3,23150.33,0.0,0
+128,P127,Ali Haque,Daughter,47,1,Primary,Married,NGO Worker,27730,1,Dhaka,EN01,2024-02-16,81.0,0,0,Male,Treatment,1,1,46+,2.0,0,3,23150.33,0.0,0
+129,P128,Ali Islam,Head,38,1,Secondary,Married,Service,8798,0,Chittagong,EN05,2024-01-15,36.0,0,0,Male,Control,1,2,31–45,1.0,0,6,2808.67,2.0,1
+129,P129,Ali Islam,Sister,30,1,Post-Graduate,Widowed,Unemployed,0,0,Chittagong,EN05,2024-01-15,36.0,0,0,Male,Control,0,5,18–30,1.0,1,6,2808.67,2.0,1
+129,P130,Ali Islam,Father,8,1,Graduate,Married,Unemployed,0,0,Chittagong,EN05,2024-01-15,36.0,0,0,Male,Control,0,4,Under 18,1.0,1,6,2808.67,2.0,1
+129,P131,Ali Islam,Brother,33,1,Primary,Married,Housewife,0,0,Chittagong,EN05,2024-01-15,36.0,0,0,Male,Control,0,1,31–45,1.0,1,6,2808.67,2.0,1
+129,P132,Ali Islam,Daughter,33,2,Unknown,Single,Student,0,0,Chittagong,EN05,2024-01-15,36.0,0,0,Female,Control,0,0,31–45,1.0,1,6,2808.67,2.0,1
+129,P133,Ali Islam,Brother,15,2,Graduate,Single,NGO Worker,8054,0,Chittagong,EN05,2024-01-15,36.0,0,0,Female,Control,1,4,Under 18,1.0,0,6,2808.67,2.0,1
+130,P134,Karim Islam,Head,49,1,Post-Graduate,Married,Business,21674,1,Rajshahi,EN01,2024-06-27,44.0,0,0,Male,Treatment,1,5,46+,6.0,0,4,6689.5,1.0,0
+130,P135,Karim Islam,Brother,22,2,HSC,Married,Student,0,1,Rajshahi,EN01,2024-06-27,44.0,0,0,Female,Treatment,0,3,18–30,6.0,1,4,6689.5,1.0,0
+130,P136,Karim Islam,Father,40,1,HSC,Single,Housewife,0,1,Rajshahi,EN01,2024-06-27,44.0,0,0,Male,Treatment,0,3,31–45,6.0,1,4,6689.5,1.0,0
+130,P137,Karim Islam,Sister,9,2,HSC,Married,Business,5084,1,Rajshahi,EN01,2024-06-27,44.0,0,0,Female,Treatment,1,3,Under 18,6.0,0,4,6689.5,1.0,0

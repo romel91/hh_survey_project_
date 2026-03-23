@@ -21,11 +21,7 @@ from scipy import stats
 import os
 import warnings
 warnings.filterwarnings('ignore')
-
-# ── Config ─────────────────────────────────────────────────
-CLEANED_PATH = 'data/cleaned/HH_Survey_Cleaned.csv'
-HH_PATH      = 'data/cleaned/HH_Household_Level.csv'
-CHARTS_DIR   = 'charts'
+from config import CLEANED_PATH, HH_PATH, CHARTS_DIR, POVERTY_LINE
 
 os.makedirs(CHARTS_DIR, exist_ok=True)
 
@@ -112,24 +108,35 @@ fig.patch.set_facecolor(C1)
 gs = gridspec.GridSpec(3, 5, figure=fig, hspace=0.55, wspace=0.4,
                        top=0.88, bottom=0.08, left=0.04, right=0.97)
 
+n_hh        = hh['hh_id'].nunique()
+n_ind       = len(df)
+n_dist      = df['district'].nunique()
+avg_hh_size = hh['hh_size'].mean()
+avg_income  = df['monthly_income'].mean()
+med_income  = df['monthly_income'].median()
+emp_rate    = df['is_earner'].mean()
+trt_pct     = df['treatment'].mean()
+poor_hh     = int(hh['is_poor'].sum())
+avg_dur     = df['interview_duration'].mean()
+
 fig.text(0.5, 0.935,
          'HOUSEHOLD SURVEY ANALYSIS — BANGLADESH 2024',
          ha='center', fontsize=19, fontweight='bold', color='white')
 fig.text(0.5, 0.902,
-         '30 Households  ·  137 Individuals  ·  5 Districts  ·  Control vs Treatment Program Evaluation',
+         f'{n_hh} Households  ·  {n_ind} Individuals  ·  {n_dist} Districts  ·  Control vs Treatment Program Evaluation',
          ha='center', fontsize=11, color=C5)
 
 kpis = [
-    ('30',        'Households Surveyed',    C2),
-    ('137',       'Total Individuals',       C2),
-    ('4.6',       'Avg Household Size',      C3),
-    ('৳13,022',   'Avg Monthly Income',      '#1A6E3D'),
-    ('59.1%',     'Employment Rate',         '#C55A11'),
-    ('51.1%',     'Treatment Group',         C1),
-    ('3',         'Households in Poverty',   '#C00000'),
-    ('৳11,089',   'Median Income (BDT)',      C3),
-    ('5',         'Districts Covered',       C2),
-    ('59.5 min',  'Avg Interview Duration',  C2),
+    (str(n_hh),                    'Households Surveyed',    C2),
+    (str(n_ind),                   'Total Individuals',       C2),
+    (f'{avg_hh_size:.1f}',         'Avg Household Size',      C3),
+    (f'৳{avg_income:,.0f}',        'Avg Monthly Income',      '#1A6E3D'),
+    (f'{emp_rate:.1%}',            'Employment Rate',         '#C55A11'),
+    (f'{trt_pct:.1%}',             'Treatment Group',         C1),
+    (str(poor_hh),                 'Households in Poverty',   '#C00000'),
+    (f'৳{med_income:,.0f}',        'Median Income (BDT)',      C3),
+    (str(n_dist),                  'Districts Covered',       C2),
+    (f'{avg_dur:.1f} min',         'Avg Interview Duration',  C2),
 ]
 
 for idx, (val, lbl, col) in enumerate(kpis):
@@ -332,7 +339,7 @@ wedges, texts, autotexts = ax.pie(
     wedgeprops=dict(edgecolor='white', linewidth=2))
 for at in autotexts:
     at.set_fontsize(12); at.set_fontweight('bold'); at.set_color('white')
-ax.set_title('Gender Distribution\n(137 individuals)')
+ax.set_title(f'Gender Distribution\n({n_ind} individuals)')
 
 # 5c: Marital status
 ax = axes[0, 2]
